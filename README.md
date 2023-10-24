@@ -25,8 +25,14 @@ If you have your own sequences and you want to submit them to CDBProm's predicto
     3.2 - You need to load the model 1; e.g. xgb1 = xgb.Booster("path/to/the/downloaded/model/xgboost_1.model")
     
     3.3 - You need to load the model 2; e.g. xgb2 = xgb.Booster("path/to/the/downloaded/model/xgboost_2.model")
+
     
  5. You need to convert your sequences to DDS (please use the stability_converter.py script).
- 6. Your converted sequences can be predicted with xgb1.predict(your_data) and xgb2.predict(your data).
- 7. A sequence is predicted as a promoter if the prediction of xgb1 is equal to 1 **OR** if the prediction of xgb2 is equal to 1.
-     
+ **Please note that the script stability_converter.py might need to be adapted to the format of your input sequences**
+
+
+ 7. Your converted sequences can be predicted with xgb1.predict(your_data) and xgb2.predict(your data).
+ 8. A sequence is predicted as a promoter if the prediction of xgb1 is equal to 1 **OR** if the prediction of xgb2 is equal to 1.
+
+
+**If you have any questions, don't hesitate in reaching out at gustavo.sganzerla@dal.ca**
