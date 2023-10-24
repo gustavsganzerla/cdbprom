@@ -35,4 +35,4 @@ If you have your own sequences and you want to submit them to CDBProm's predicto
  8. A sequence is predicted as a promoter if the prediction of xgb1 is equal to 1 **OR** if the prediction of xgb2 is equal to 1.
 
 
-**If you have any questions, don't hesitate in reaching out at gustavo.sganzerla@dal.ca**
+**If you have any questions, don't hesitate in reaching out at sganzerlagustavo@gmail.com**
