@@ -9,8 +9,11 @@ All the sequences in **training_data.csv** (except for the label) need to be con
 Once the sequences are converted, they can be applied in the **predictor.py** script.
 
 The classifier employed in CDBProm is composed of two models:
+
  Step 1: the training with the whole **training_data.csv**
+ 
  Step 2: the training with the misclassification from **step 1**
+ 
 
 The pre-trained models are also available in the files **xgboost_1.model** and **xgboost_2.model**, respectively.
 
@@ -31,7 +34,7 @@ If you have your own sequences and you want to submit them to CDBProm's predicto
  **Please note that the script stability_converter.py might need to be adapted to the format of your input sequences**
 
 
- 7. Your converted sequences can be predicted with xgb1.predict(your_data) and xgb2.predict(your data).
+ 7. Your converted sequences can be predicted with xgb1.predict(your_data) and xgb2.predict(your_data).
  8. A sequence is predicted as a promoter if the prediction of xgb1 is equal to 1 **OR** if the prediction of xgb2 is equal to 1.
 
 
