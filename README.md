@@ -15,13 +15,13 @@ The classifier employed in CDBProm is composed of two models:
 The pre-trained models are also available in the files **xgboost_1.model** and **xgboost_2.model**, respectively.
 
 If you have your own sequences and you want to submit them to CDBProm's predictor, you need to:
-  1. Download the models (**xgboost_1.model** and **xgboost_2.model**)
-  2. Load the models in a Python environment.
-  3. The library xgboost needs to be loaded
-      3.1 - You need the package xgboost (e.g. import xgboost as xgb)
-      3.2 - You need to load the model 1; e.g. xgb1 = xgb.Booster("path/to/the/downloaded/model/xgboost_1.model")
-      3.3 - You need to load the model 2; e.g. xgb2 = xgb.Booster("path/to/the/downloaded/model/xgboost_2.model")
-  5. You need to convert your sequences to DDS (please use the stability_converter.py script).
-  6. Your converted sequences can be predicted with xgb1.predict(your_data) and xgb2.predict(your data).
-  7. A sequence is predicted as a promoter if the prediction of xgb1 is equal to 1 **OR** if the prediction of xgb2 is equal to 1.
+ 1. Download the models (**xgboost_1.model** and **xgboost_2.model**)
+ 2. Load the models in a Python environment.
+ 3. The library xgboost needs to be loaded
+    3.1 - You need the package xgboost (e.g. import xgboost as xgb)
+    3.2 - You need to load the model 1; e.g. xgb1 = xgb.Booster("path/to/the/downloaded/model/xgboost_1.model")
+    3.3 - You need to load the model 2; e.g. xgb2 = xgb.Booster("path/to/the/downloaded/model/xgboost_2.model")
+ 5. You need to convert your sequences to DDS (please use the stability_converter.py script).
+ 6. Your converted sequences can be predicted with xgb1.predict(your_data) and xgb2.predict(your data).
+ 7. A sequence is predicted as a promoter if the prediction of xgb1 is equal to 1 **OR** if the prediction of xgb2 is equal to 1.
      
