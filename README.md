@@ -35,7 +35,10 @@ If you have your own sequences and you want to submit them to CDBProm's predicto
 
 
  7. Your converted sequences can be predicted with xgb1.predict(your_data) and xgb2.predict(your_data).
- 8. A sequence is predicted as a promoter if the prediction of xgb1 is equal to 1 **OR** if the prediction of xgb2 is equal to 1.
+
+ 9. A sequence is predicted as a promoter if the prediction of xgb1 is equal to 1 **OR** if the prediction of xgb2 is equal to 1.
+
+ 10. The predictions of CDBProm are freely available at https://aw.iimas.unam.mx/cdbprom/.
 
 
 **If you have any questions, don't hesitate in reaching out at sganzerlagustavo@gmail.com**
